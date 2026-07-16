@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Haven 686</title>
+  <meta name="description" content="Get in touch with Haven 686. Whether you're a foster family, a church leader, or someone who wants to support the mission, we'd love to hear from you." />
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="icon" type="image/svg+xml" href="images/favicon-light.svg" media="(prefers-color-scheme: light)" />
+  <link rel="icon" type="image/svg+xml" href="images/favicon-dark.svg" media="(prefers-color-scheme: dark)" />
+  <link rel="stylesheet" href="https://use.typekit.net/nsf8jyf.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo-white.png" alt="Haven 686" />
+      </a>
+      <nav class="nav-links">
+        <div class="nav-dropdown">
+          <button class="nav-link nav-dropdown-btn">Our Work ▾</button>
+          <div class="nav-dropdown-menu">
+            <a href="families.html" class="nav-dropdown-item">Foster Families</a>
+            <a href="campus.html" class="nav-dropdown-item">Our Campus</a>
+            <a href="churches.html" class="nav-dropdown-item">For Churches</a>
+          </div>
+        </div>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="give.html" class="nav-link">Give</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="nav-mobile">
+      <a href="families.html" class="nav-link">Foster Families</a>
+      <a href="campus.html" class="nav-link">Our Campus</a>
+      <a href="churches.html" class="nav-link">For Churches</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="give.html" class="nav-link">Give</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <p class="page-hero-eyebrow page-hero-eyebrow-stone">Haven 686</p>
+      <h1 class="page-hero-headline">Get in Touch</h1>
+      <p class="page-hero-sub">Whether you're a foster family, a church leader, or someone who wants to support the mission — we'd love to hear from you.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section">
+    <div class="contact-inner">
+
+      <!-- LEFT: Info -->
+      <div class="contact-info">
+        <div class="contact-block">
+          <p class="contact-block-label">Who You're Reaching</p>
+          <p class="contact-block-name">Boone Harding</p>
+          <p class="contact-block-title">Founder & Executive Director, Haven 686</p>
+        </div>
+        <div class="contact-block">
+          <p class="contact-block-label">Email</p>
+          <a href="mailto:thehaven686@gmail.com" class="contact-block-link">thehaven686@gmail.com</a>
+        </div>
+        <div class="contact-block">
+          <p class="contact-block-label">Location</p>
+          <p class="contact-block-text">East Tennessee</p>
+        </div>
+        <div class="contact-block">
+          <p class="contact-block-label">Follow Along</p>
+          <div class="contact-social">
+            <a href="https://instagram.com/thehaven686" target="_blank" rel="noopener" class="contact-block-link">Instagram</a>
+            <a href="https://facebook.com/Haven686" target="_blank" rel="noopener" class="contact-block-link">Facebook</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Form -->
+      <div class="contact-form-wrap">
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/xjgddyrb"
+          method="POST"
+          id="contact-form"
+        >
+          <div class="form-row form-row-split">
+            <div class="form-field">
+              <label for="first-name" class="form-label">First Name</label>
+              <input type="text" id="first-name" name="first_name" class="form-input" placeholder="First" required />
+            </div>
+            <div class="form-field">
+              <label for="last-name" class="form-label">Last Name</label>
+              <input type="text" id="last-name" name="last_name" class="form-input" placeholder="Last" required />
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="you@example.com" required />
+          </div>
+
+          <div class="form-field">
+            <label for="reason" class="form-label">I am reaching out as a...</label>
+            <select id="reason" name="reason" class="form-input form-select" required>
+              <option value="" disabled selected>Select one</option>
+              <option value="foster-family">Foster family or prospective foster parent</option>
+              <option value="church-leader">Church leader</option>
+              <option value="donor">Donor or supporter</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" name="message" class="form-input form-textarea" placeholder="Tell us a little about yourself and how we can help..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+
+          <div class="form-success" id="form-success">
+            <p class="form-success-title">Message sent!</p>
+            <p class="form-success-body">Your message has been sent. We'll be in touch soon. Thanks!</p>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner footer-inner-simple">
+      <div class="footer-brand">
+        <img src="images/logo-white.png" alt="Haven 686" class="footer-logo" />
+        <p class="footer-tagline">God sets the solitary in a home. — Psalm 68:6</p>
+      </div>
+      <div class="footer-connect">
+        <p class="footer-connect-label">Connect</p>
+        <a href="https://instagram.com/thehaven686" target="_blank" rel="noopener" class="footer-link">Instagram</a>
+        <a href="https://facebook.com/Haven686" target="_blank" rel="noopener" class="footer-link">Facebook</a>
+        <a href="mailto:thehaven686@gmail.com" class="footer-link">thehaven686@gmail.com</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Haven 686. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    const form = document.getElementById('contact-form');
+    const success = document.getElementById('form-success');
+    if (form) {
+      form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const data = new FormData(form);
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        });
+        if (response.ok) {
+          form.style.display = 'none';
+          success.style.display = 'block';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
