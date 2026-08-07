@@ -68,7 +68,7 @@
         <span class="stat-number">Thousands of families<br>want to foster.</span>
         <span class="stat-label">Most never start.</span>
       </div>
-      <p class="stat-context">The bar is high and the unknowns are real. Without support, foster care stays on the "someday" list — even for families who'd be great at it right now.</p>
+      <p class="stat-context">The barriers are significant and the unknowns are real. Without support, foster care stays on the "someday" list — even for families who'd be great at it right now.</p>
     </div>
     <div class="solution">
       <p class="solution-eyebrow solution-eyebrow-dark">The Haven</p>
@@ -76,7 +76,7 @@
         <span class="stat-number">A home.<br>A community.</span>
         <span class="stat-label">A calling made possible.</span>
       </div>
-      <p class="stat-context">Haven 686 lowers the bar, providing housing and a faith-aligned community so willing families can stop waiting and start fostering — sustainably.</p>
+      <p class="stat-context">Haven 686 removes barriers, providing housing and a faith-aligned community so willing families can stop waiting and start fostering — sustainably.</p>
       <a href="campus.html" class="text-link">See the vision →</a>
     </div>
   </section>
@@ -120,7 +120,28 @@
     </div>
   </section>
 
-  <!-- STAT + STORY CAROUSEL -->
+  <!--
+    ============================================================
+    HIDDEN — DO NOT PUBLISH AS-IS
+    ============================================================
+    This is the original 3-column stat + photo + story carousel,
+    stored inside a <template> tag so it's fully inert (won't
+    render, won't run, ids won't collide) until you move it out.
+    The "stories" below (Johnson, Martinez, Kim families) are
+    PLACEHOLDER TEXT, not real testimonials — do not move this
+    out of the template and push it live until each story/photo
+    is replaced with a real family and a real quote.
+
+    Once you have real photos + stories:
+      1. Replace johnson.jpg / martinez.jpg / kim.jpg and the
+         quotes below with real ones.
+      2. Delete the live "STAT + COUNTER CAROUSEL" section below.
+      3. Cut everything between <template> and </template> below
+         (not the template tags themselves) and paste it in that
+         section's place.
+    ============================================================
+  -->
+  <template id="original-carousel-with-placeholder-stories">
   <section class="carousel-section">
     <div class="carousel" id="carousel">
 
@@ -165,9 +186,9 @@
       <div class="carousel-slide">
         <div class="carousel-stat">
           <p class="carousel-eyebrow eyebrow-stone">The Reality</p>
-          <!-- Source: AFCARS FY2024 data via The Imprint (imprintnews.org) — 45% of FY2024 foster care exits were reunifications, a record low. 55% is the complement. -->
-          <p class="carousel-big-stat">55% of children</p>
-          <p class="carousel-stat-label">who exit foster care do not return home to a parent or caregiver — most leave through adoption, guardianship, or aging out instead.</p>
+          <!-- Source: AFCARS FY2024 data via National Council For Adoption's AFCARS 2025 Update (adoptioncouncil.org) — 15,379 of 176,730 FY2024 exits were emancipation ("aging out"), 9% of all exits. -->
+          <p class="carousel-big-stat">9% of kids</p>
+          <p class="carousel-stat-label">who leave foster care age out completely alone — no family, no home, just a birthday and a system that stops.</p>
         </div>
         <div class="carousel-photo">
           <div class="carousel-photo-bg" style="background-image: url('images/kim.jpg'); background-size: cover; background-position: center;"></div>
@@ -193,6 +214,64 @@
       <button class="carousel-btn next" id="carousel-next" aria-label="Next slide">&#8594;</button>
     </div>
   </section>
+  </template>
+
+  <!-- STAT + COUNTER CAROUSEL (live version — stat left, hope-forward counter blurb right, no photos/stories yet) -->
+  <section class="carousel-section">
+    <div class="carousel" id="carousel">
+
+      <div class="carousel-slide carousel-slide-two-col active">
+        <div class="carousel-stat">
+          <p class="carousel-eyebrow eyebrow-stone">The Reality</p>
+          <!-- Source: Child Abuse & Neglect, April 2025, peer-reviewed analysis of federal NYTD data — lifetime incarceration rate by age 20 for foster youth: 42% -->
+          <p class="carousel-big-stat">42% of foster youth</p>
+          <p class="carousel-stat-label">will be incarcerated at least once by the time they turn 20.</p>
+        </div>
+        <div class="carousel-counter">
+          <p class="carousel-story-eyebrow">It Doesn't Have to Stay This Way</p>
+          <p class="carousel-counter-text">Foster families that provide stability, identity, and "family" are usually the story behind the other 58%. Together we can create better outcomes for these kids.</p>
+        </div>
+      </div>
+
+      <div class="carousel-slide carousel-slide-two-col">
+        <div class="carousel-stat">
+          <p class="carousel-eyebrow eyebrow-stone">The Reality</p>
+          <!-- Source: Brookings Institution (citing HHS/ASPE admin data) and Christian Alliance for Orphans (cafo.org, 2026 update) — both report a 30-50% range for first-year foster family attrition. 40% used as midpoint. -->
+          <p class="carousel-big-stat">40% of foster families quit</p>
+          <p class="carousel-stat-label">within the first year. Isolation and lack of support are the most cited reasons.</p>
+        </div>
+        <div class="carousel-counter">
+          <p class="carousel-story-eyebrow">It Doesn't Have to Stay This Way</p>
+          <p class="carousel-counter-text">The 60% who don't quit are almost never doing it alone — they have a church or community wrapped around them. That's exactly what Haven exists to provide, so more families can stay the course.</p>
+        </div>
+      </div>
+
+      <div class="carousel-slide carousel-slide-two-col">
+        <div class="carousel-stat">
+          <p class="carousel-eyebrow eyebrow-stone">The Reality</p>
+          <!-- Source: AFCARS FY2024 data via National Council For Adoption's AFCARS 2025 Update (adoptioncouncil.org) — 15,379 of 176,730 FY2024 exits were emancipation ("aging out"), 9% of all exits. -->
+          <p class="carousel-big-stat">9% of kids</p>
+          <p class="carousel-stat-label">who leave foster care age out completely alone — no family, no home, just a birthday and a system that stops.</p>
+        </div>
+        <div class="carousel-counter">
+          <p class="carousel-story-eyebrow">It Doesn't Have to Stay This Way</p>
+          <p class="carousel-counter-text">A family who says yes — through adoption or guardianship — is the reason a child never has to find out what aging out alone feels like.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="carousel-controls">
+      <button class="carousel-btn prev" id="carousel-prev" aria-label="Previous slide">&#8592;</button>
+      <div class="carousel-dots" id="carousel-dots">
+        <button class="carousel-dot active" data-slide="0"></button>
+        <button class="carousel-dot" data-slide="1"></button>
+        <button class="carousel-dot" data-slide="2"></button>
+      </div>
+      <button class="carousel-btn next" id="carousel-next" aria-label="Next slide">&#8594;</button>
+    </div>
+  </section>
+
 
   <!-- SELAH — PSALM 91:4 -->
   <section class="selah" style="background-image: url('images/selah-bg.jpg');">
